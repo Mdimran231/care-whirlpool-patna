@@ -19,7 +19,7 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-400">
             <li><a href="/" className="hover:text-blue-400 transition">Home</a></li>
             <li><a href="/services" className="hover:text-blue-400 transition">Our Services</a></li>
-            <li><a href="tel:+918540038107" className="hover:text-blue-400 transition">Contact Us</a></li>
+            <li><a href="tel:+919942470813" className="hover:text-blue-400 transition">Contact Us</a></li>
           </ul>
         </div>
 
@@ -28,7 +28,7 @@ export default function Footer() {
           <h3 className="text-xl font-bold mb-4">Contact Info</h3>
           <ul className="space-y-2 text-gray-400">
             <li>📍 Patna, Bihar, India</li>
-            <li>📞 +91 8540038107</li>
+            <li>📞 +91 9942470813</li>
             <li>📧 support@carewhirlpool.com</li>
           </ul>
         </div>

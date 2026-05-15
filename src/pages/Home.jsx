@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { motion } from 'framer-motion';
-import { Zap, ShieldCheck, Phone, MessageCircle } from 'lucide-react';
+import { Zap, ShieldCheck, Phone, MessageCircle, CreditCard } from 'lucide-react';
 import { FaBolt, FaUserTie, FaWallet, FaShieldAlt } from 'react-icons/fa';
 import ServiceCard from '../components/ServiceCard';
 import Navbar from '../components/Navbar';
@@ -23,13 +23,11 @@ export default function Home() {
     ];
 
     useEffect(() => {
-        // Hero Content Animation
         gsap.fromTo(contentRef.current.children,
             { opacity: 0, y: 30 },
             { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: "power4.out" }
         );
 
-        // Floating Image Effect
         gsap.to(imageRef.current, {
             y: -30,
             duration: 2.5,
@@ -38,7 +36,6 @@ export default function Home() {
             ease: "sine.inOut"
         });
 
-        // Background Gradient Animation
         gsap.to(".animated-bg", {
             backgroundPosition: "200% center",
             duration: 10,
@@ -58,16 +55,20 @@ export default function Home() {
                     backgroundSize: "400% 400%"
                 }}>
 
-                {/* Decorative Blobs */}
                 <div className="absolute top-0 left-0 w-72 h-72 bg-blue-400 opacity-20 blur-[120px] rounded-full -translate-x-1/2 -translate-y-1/2"></div>
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-sky-500 opacity-10 blur-[150px] rounded-full translate-x-1/2 translate-y-1/2"></div>
 
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
-                    {/* --- Modified Text Container ( md:w-3/5 se badal kar md:w-1/2 kiya) --- */}
-                    <div ref={contentRef} className="md:w-1/2 space-y-8 text-center md:text-left z-20"> {/* z-index badhaya safe side ke liye */}
-                        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 text-blue-200 text-sm font-semibold tracking-wide">
-                            <span className="flex h-2 w-2 rounded-full bg-blue-400 animate-ping"></span>
-                            #1 Appliance Repair in Patna
+                    <div ref={contentRef} className="md:w-1/2 space-y-8 text-center md:text-left z-20">
+                        <div className="flex flex-col md:flex-row gap-3 items-center md:items-start">
+                            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 text-blue-200 text-sm font-semibold tracking-wide">
+                                <span className="flex h-2 w-2 rounded-full bg-blue-400 animate-ping"></span>
+                                #1 Appliance Repair in Patna
+                            </div>
+                            {/* Hero Visiting Charge Badge */}
+                            <div className="inline-flex items-center gap-2 bg-amber-500/20 backdrop-blur-md px-4 py-2 rounded-full border border-amber-500/30 text-amber-200 text-sm font-bold">
+                                <CreditCard size={14} /> Visiting Charge: ₹299
+                            </div>
                         </div>
 
                         <h2 className="text-5xl md:text-7xl font-black leading-[1.1] tracking-tight">
@@ -78,7 +79,7 @@ export default function Home() {
                         </h2>
 
                         <p className="text-lg md:text-xl text-blue-100/80 max-w-xl mx-auto md:mx-0 leading-relaxed font-medium">
-                            Expert Repair for All Your Home Appliances. Specialized in Cooling Systems with a guaranteed 60-minute arrival time in Patna.
+                            Expert Repair for All Your Home Appliances. Specialized in Cooling Systems with a guaranteed 60-minute arrival time.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-5 justify-center md:justify-start pt-4">
@@ -101,15 +102,11 @@ export default function Home() {
                         </div>
                     </div>
 
-                    {/* --- Modified Image Container (md:w-2/5 se badal kar md:w-1/2 kiya aur scale kiya) --- */}
                     <div ref={imageRef} className="md:w-1/2 mt-16 md:mt-0 relative flex justify-center items-center">
-                        {/* Glow effect ko bhi bada kiya taaki badi image par accha lage */}
                         <div className="absolute inset-0 bg-blue-500 rounded-full opacity-20 blur-[100px] scale-125"></div>
-
                         <img
                             src="/hero.png"
                             alt="Whirlpool Appliances"
-                            /* 'scale-110' aur 'md:scale-125' se image container se bhi bahar tak stretch hogi (overflow check kar lena agar dikat ho) */
                             className="w-full h-auto object-contain relative z-10 filter drop-shadow-[0_20px_60px_rgba(0,0,0,0.6)] scale-110 md:scale-125 origin-center md:origin-right"
                         />
                     </div>
@@ -123,26 +120,48 @@ export default function Home() {
                         <h3 className="text-blue-600 font-black tracking-widest uppercase text-sm italic">Premium Solutions</h3>
                         <h2 className="text-4xl md:text-5xl font-black text-slate-900">Our Expertise</h2>
                         <div className="h-1.5 w-24 bg-blue-600 rounded-full"></div>
+                        
+                        {/* Main Visiting Charge Highlight */}
+                        <motion.div 
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            className="mt-6 flex items-center gap-3 bg-blue-50 border border-blue-100 px-6 py-3 rounded-2xl"
+                        >
+                            <div className="bg-blue-600 p-2 rounded-lg text-white">
+                                <FaWallet />
+                            </div>
+                            <div className="text-left">
+                                <p className="text-[10px] uppercase font-bold text-blue-400 leading-none mb-1">Standard Rates</p>
+                                <p className="text-blue-900 font-black text-lg leading-none">₹299 <span className="text-sm font-medium text-blue-600">Visiting Charge</span></p>
+                            </div>
+                        </motion.div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                        {Object.entries(servicesData).map(([id, service]) => (
-                            <ServiceCard
-                                key={id}
-                                id={id}
-                                title={service.title}
-                                desc={service.desc}
-                                image={service.image} // <-- Yahan 'image' likhein, 'img' nahi
-                            />
+                        {Object.entries(servicesData).slice(0, 6).map(([id, service]) => (
+                            <div key={id} className="hover:scale-[1.02] transition-transform duration-300">
+                                <ServiceCard
+                                    id={id}
+                                    title={service.title}
+                                    desc={service.desc}
+                                    image={service.image}
+                                />
+                            </div>
                         ))}
                     </div>
+
+                    {Object.keys(servicesData).length > 6 && (
+                        <div className="mt-16 text-center">
+                            <a href="/services" className="inline-block bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold hover:bg-blue-600 transition-all shadow-xl">
+                                View All Services
+                            </a>
+                        </div>
+                    )}
                 </div>
             </section>
 
-            {/* Brand Marquee-style Section */}
-            {/* Brand Marquee-style Section */}
+            {/* Brand Section */}
             <section className="py-24 bg-slate-950 text-white overflow-hidden border-y border-white/5 relative">
-                {/* Background Glows for extra depth */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-sky-500 to-transparent opacity-50" />
 
                 <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -154,7 +173,6 @@ export default function Home() {
                         Authorized Care for Major Brands
                     </motion.p>
 
-                    {/* Brand Grid with High Visibility */}
                     <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-16 md:gap-x-20">
                         {[
                             { name: "LG", color: "hover:text-[#a50034]" },
@@ -191,7 +209,6 @@ export default function Home() {
                         ))}
                     </div>
                 </div>
-
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-blue-600 to-transparent opacity-50" />
             </section>
 
