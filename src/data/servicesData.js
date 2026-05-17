@@ -33,32 +33,32 @@ export const servicesData = {
     features: ["Magnetron Repair", "Capacitor Replacement", "Door Switch Fix", "Control Panel Repair"]
   },
   "installation": {
-    title: "AC Installation",
-    price: "1199",
-    image: "/split.jpg",
-    desc: "Naya AC liya hai? Humare certified experts precision mounting aur perfect copper piping ke saath installation karte hain taaki gas leak na ho.",
-    features: ["Safe Wall Mounting", "Copper Piping Layout", "Drain Pipe Setup", "Vacuuming & Leak Testing", "Performance Check"]
+    "title": "AC Installation",
+    "price": "1199",
+    "image": "/split.jpg",
+    "desc": "Bought a new AC? Our certified experts provide precision mounting and perfect copper piping installation to ensure zero gas leakage and maximum cooling.",
+    "features": ["Safe Wall Mounting", "Copper Piping Layout", "Drain Pipe Setup", "Vacuuming & Leak Testing", "Performance Check"]
   },
   "re-installation": {
-    title: "AC Re-Installation (Shifting)",
-    price: "1499",
-    image: "/Ac.png",
-    desc: "Purane AC ko naye jagah shift karna? Hum karte hain safe dismantling aur professional fitting bina gas leak kiye Patna mein.",
-    features: ["Gas Pump-Down (Gas Save)", "Safe Dismantling", "Precision Re-Fitting", "Leak Testing", "30-Day Service Warranty"]
+    "title": "AC Re-Installation (Shifting)",
+    "price": "1499",
+    "image": "/Ac.png",
+    "desc": "Shifting your existing AC to a new location? We provide safe dismantling and professional re-fitting in Patna without any gas loss.",
+    "features": ["Gas Pump-Down (Gas Saving)", "Safe Dismantling", "Precision Re-Fitting", "Leak Testing", "30-Day Service Warranty"]
   },
   "jet-foam": {
-    title: "Advanced Jet Foam Service",
-    price: "599",
-    image: "/foam.jpeg",
-    desc: "Normal service se 2 guna zyada safai. Hum use karte hain specialized alkaline foam jo coil ke andar chupi gandagi ko bahar nikal deta hai.",
-    features: ["Deep Chemical Foam Cleaning", "2x Better Airflow", "Bacteria & Mold Removal", "Indoor Unit Jet Wash", "Cooling Efficiency Boost"]
+    "title": "Advanced Jet Foam Service",
+    "price": "599",
+    "image": "/foam.jpeg",
+    "desc": "Get 2x better cleaning than normal servicing. We use specialized alkaline foam that deep cleans the coils, removing hidden dirt and allergens.",
+    "features": ["Deep Chemical Foam Cleaning", "2x Better Airflow", "Bacteria & Mold Removal", "Indoor Unit Jet Wash", "Cooling Efficiency Boost"]
   },
   "window-ac-installation": {
-    title: "Window AC Installation",
-    price: "1299",
-    image: "/window.jpg",
-    desc: "Professional installation of window AC units with proper mounting and electrical connections.",
-    features: ["Safe Wall Mounting", "Proper Electrical Wiring", "Drain Pipe Setup", "Vacuuming & Leak Testing", "Performance Check"]
+    "title": "Window AC Installation",
+    "price": "1299",
+    "image": "/window.jpg",
+    "desc": "Professional installation of window AC units with precise window frame mounting and secure electrical connections.",
+    "features": ["Safe Wall Mounting", "Proper Electrical Wiring", "Drain Pipe Setup", "Vacuuming & Leak Testing", "Performance Check"]
   }
 
 };

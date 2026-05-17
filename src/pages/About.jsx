@@ -62,7 +62,7 @@ export default function About() {
             transition={{ delay: 0.4 }}
             className="text-slate-400 text-lg md:text-2xl max-w-3xl mx-auto font-medium leading-relaxed"
           >
-            Care Whirlpool sirf ek repair service nahi, Patna ke har ghar ka ek bharosemand sathi hai. Hum aapke comfort ki zimmedari lete hain.
+            Care Whirlpool is more than just a repair service; we are a trusted partner for every household in Patna. We take full responsibility for your home comfort.
           </motion.p>
         </div>
       </section>
@@ -115,7 +115,7 @@ export default function About() {
             </div>
             
             <p className="text-slate-600 text-xl leading-relaxed font-medium">
-              Humne dekha ki Patna mein logon ko sahi time par aur sahi daam mein professional repair milna mushkil tha. Humne usey badalne ka faisla kiya.
+              We realized that people in Patna struggled to find professional repairs at the right time and fair price. We decided to change that once and for all.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
@@ -143,9 +143,9 @@ export default function About() {
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
           
           <div className="relative z-10 text-center mb-20 space-y-4">
-            <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter italic">Humein Hi Kyun Chunien?</h2>
+            <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter italic">Why Choose Us?</h2>
             <div className="w-24 h-1 bg-sky-500 mx-auto rounded-full" />
-            <p className="text-slate-400 font-medium">Patna ke 5000+ parivaar hum par bharosa karte hain</p>
+            <p className="text-slate-400 font-medium">Over 5000+ families in Patna trust our services</p>
           </div>
 
           <motion.div 
@@ -158,17 +158,17 @@ export default function About() {
             <FeatureCard 
               icon={<ShieldCheck size={40}/>} 
               title="Fully Insured" 
-              desc="Aapke appliances hamari zimmedari hain. Safe aur secure handling ki pakki guarantee." 
+              desc="Your appliances are our responsibility. We guarantee safe, secure, and professional handling every time." 
             />
             <FeatureCard 
               icon={<Clock size={40}/>} 
               title="Punctual Service" 
-              desc="Time ki keemat hum jaante hain. Hamare experts hamesha on-time aapke darwaaze par." 
+              desc="We value your time. Our expert technicians are committed to arriving at your doorstep exactly on schedule." 
             />
             <FeatureCard 
               icon={<Users size={40}/>} 
               title="Local Experts" 
-              desc="Hum Patna ke hi hain, isliye yahan ki garmi aur aapki zaruraton ko sabse behtar samajhte hain." 
+              desc="Being based in Patna, we truly understand the local climate and specific maintenance needs of your appliances." 
             />
           </motion.div>
         </div>

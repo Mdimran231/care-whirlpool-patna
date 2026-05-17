@@ -6,26 +6,26 @@ function Contact() {
   const glassStyle = "bg-white/40 backdrop-blur-2xl border border-white/60 shadow-[0_20px_40px_rgba(31,38,135,0.07)]";
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       className="min-h-screen pt-28 pb-16 px-6 font-sans"
     >
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h2 className="text-5xl md:text-6xl font-black text-slate-900 mb-6">
-          Humein <span className="text-sky-500">Contact Karein</span>
+          Get In <span className="text-sky-500">Touch With Us</span>
         </h2>
         <p className="text-slate-500 text-lg font-medium max-w-2xl mx-auto">
-          Patna mein hamari workshop hai. Aap niche diye gaye button se direct call bhi kar sakte hain.
+          Our service center is located in Patna. You can call us directly using the button below for immediate assistance.
         </p>
       </div>
 
       <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-8 mb-12">
-        
+
         {/* --- LEFT: DIRECT CALL CARD --- */}
         <div className="lg:col-span-1 space-y-6">
           {/* Direct Call Action */}
-          <motion.a 
+          <motion.a
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             href="tel:+919942470813" // Direct Call Link
@@ -52,37 +52,37 @@ function Contact() {
         </div>
 
         {/* --- RIGHT: REAL GOOGLE MAP --- */}
-       {/* --- RIGHT: REAL GOOGLE MAP --- */}
-<div className="lg:col-span-2">
-  <div className={`h-full min-h-[400px] rounded-[3rem] overflow-hidden ${glassStyle} p-3`}>
-    <iframe 
-      title="Kankarbagh Patna Map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14393.511986897729!2d85.14282270066806!3d25.592352789335607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5884484c81cb%3A0xfae38a8a97ed5467!2sKankarbagh%2C%20Patna%2C%20Bihar%20800020!5e0!3m2!1sen!2sin!4v1778700092123!5m2!1sen!2sin"
-      width="100%" 
-      height="100%" 
-      style={{ border: 0, borderRadius: '2.2rem' }} 
-      allowFullScreen="" 
-      loading="lazy" 
-      referrerPolicy="no-referrer-when-downgrade"
-    ></iframe>
-  </div>
-</div>
+        {/* --- RIGHT: REAL GOOGLE MAP --- */}
+        <div className="lg:col-span-2">
+          <div className={`h-full min-h-[400px] rounded-[3rem] overflow-hidden ${glassStyle} p-3`}>
+            <iframe
+              title="Kankarbagh Patna Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14393.511986897729!2d85.14282270066806!3d25.592352789335607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5884484c81cb%3A0xfae38a8a97ed5467!2sKankarbagh%2C%20Patna%2C%20Bihar%20800020!5e0!3m2!1sen!2sin!4v1778700092123!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0, borderRadius: '2.2rem' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </div>
 
       {/* Quick Info Strip */}
       <div className={`max-w-7xl mx-auto p-6 rounded-3xl ${glassStyle} flex flex-wrap justify-around items-center gap-6 text-center`}>
-         <div className="flex items-center gap-3">
-            <Clock className="text-sky-500" />
-            <span className="font-bold text-slate-700 underline decoration-sky-300">Open 24/7 for Repairs</span>
-         </div>
-         <div className="flex items-center gap-3">
-            <Mail className="text-sky-500" />
-            <a href="mailto:mdsou42@gmail.com" className="font-bold text-slate-700 hover:text-sky-500">mdsou42@gmail.com</a>
-         </div>
-         <div className="flex items-center gap-3">
-            <MessageCircle className="text-sky-500" />
-            <span className="font-bold text-slate-700">WhatsApp: +91 9942470813</span>
-         </div>
+        <div className="flex items-center gap-3">
+          <Clock className="text-sky-500" />
+          <span className="font-bold text-slate-700 underline decoration-sky-300">Open 24/7 for Repairs</span>
+        </div>
+        <div className="flex items-center gap-3">
+          <Mail className="text-sky-500" />
+          <a href="mailto:mdsou42@gmail.com" className="font-bold text-slate-700 hover:text-sky-500">mdsou42@gmail.com</a>
+        </div>
+        <div className="flex items-center gap-3">
+          <MessageCircle className="text-sky-500" />
+          <span className="font-bold text-slate-700">WhatsApp: +91 9942470813</span>
+        </div>
       </div>
     </motion.div>
   );
