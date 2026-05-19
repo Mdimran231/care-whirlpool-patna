@@ -29,7 +29,7 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-400">
             <li>📍 Patna, Bihar, India</li>
             <li>📞 +91 9942470813</li>
-            <li>📧mdsou42@gmail.com </li>
+            <li>📧 whirpoolcareservices@gmail.com</li>
           </ul>
         </div>
       </div>

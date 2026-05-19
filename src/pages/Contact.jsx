@@ -52,7 +52,6 @@ function Contact() {
         </div>
 
         {/* --- RIGHT: REAL GOOGLE MAP --- */}
-        {/* --- RIGHT: REAL GOOGLE MAP --- */}
         <div className="lg:col-span-2">
           <div className={`h-full min-h-[400px] rounded-[3rem] overflow-hidden ${glassStyle} p-3`}>
             <iframe
@@ -77,7 +76,7 @@ function Contact() {
         </div>
         <div className="flex items-center gap-3">
           <Mail className="text-sky-500" />
-          <a href="mailto:mdsou42@gmail.com" className="font-bold text-slate-700 hover:text-sky-500">mdsou42@gmail.com</a>
+          <a href="mailto:whirpoolcareservices@gmail.com" className="font-bold text-slate-700 hover:text-sky-500">whirpoolcareservices@gmail.com</a>
         </div>
         <div className="flex items-center gap-3">
           <MessageCircle className="text-sky-500" />
