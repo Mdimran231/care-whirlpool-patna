@@ -97,7 +97,7 @@ export default function About() {
           >
             <div className="absolute -inset-4 bg-gradient-to-tr from-sky-500 to-blue-600 rounded-[4rem] blur-2xl opacity-10" />
             <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-[12px] border-white">
-              <img src="https://images.unsplash.com/photo-1581092921461-eab62e92c859?auto=format&fit=crop&q=80" alt="Our Team" className="w-full h-full object-cover aspect-square" />
+              <img src="about.jpg" alt="Our Team" className="w-full h-full object-cover aspect-square" />
             </div>
             {/* Experience Badge */}
             <div className="absolute -bottom-6 -right-6 bg-slate-950 text-white p-10 rounded-[3rem] shadow-2xl hidden md:flex flex-col items-center">
