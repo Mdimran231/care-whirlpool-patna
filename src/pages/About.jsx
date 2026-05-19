@@ -18,11 +18,6 @@ export default function About() {
     }
   };
 
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1 }
-  };
-
   return (
     <div className="min-h-screen bg-white selection:bg-sky-500 selection:text-white">
       {/* --- HERO SECTION --- */}
@@ -50,9 +45,9 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter mb-8"
           >
-            The Heart of <br />
+            Whirlpool Appliance <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">
-              Reliable Repair
+              Experts In Patna
             </span>
           </motion.h1>
 
@@ -62,7 +57,7 @@ export default function About() {
             transition={{ delay: 0.4 }}
             className="text-slate-400 text-lg md:text-2xl max-w-3xl mx-auto font-medium leading-relaxed"
           >
-            Care Whirlpool is more than just a repair service; we are a trusted partner for every household in Patna. We take full responsibility for your home comfort.
+            Care Whirlpool is Patna's most trusted doorstep service network. We specialize in fast, reliable, and affordable repair for your Refrigerators, Washing Machines, and Air Conditioners.
           </motion.p>
         </div>
       </section>
@@ -86,7 +81,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* --- OUR STORY & MISSION --- */}
+      {/* --- OUR SERVICES & MISSION --- */}
       <section className="py-32 px-6">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
           <motion.div 
@@ -97,7 +92,7 @@ export default function About() {
           >
             <div className="absolute -inset-4 bg-gradient-to-tr from-sky-500 to-blue-600 rounded-[4rem] blur-2xl opacity-10" />
             <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-[12px] border-white">
-              <img src="about.jpg" alt="Our Team" className="w-full h-full object-cover aspect-square" />
+              <img src="about.jpg" alt="Whirlpool Expert Team" className="w-full h-full object-cover aspect-square" />
             </div>
             {/* Experience Badge */}
             <div className="absolute -bottom-6 -right-6 bg-slate-950 text-white p-10 rounded-[3rem] shadow-2xl hidden md:flex flex-col items-center">
@@ -108,22 +103,24 @@ export default function About() {
           
           <div className="space-y-10">
             <div className="space-y-4">
-              <h3 className="text-sky-600 font-black text-sm uppercase tracking-[0.3em]">Our Philosophy</h3>
+              <h3 className="text-sky-600 font-black text-sm uppercase tracking-[0.3em]">Our Specialization</h3>
               <h2 className="text-5xl md:text-6xl font-black text-slate-900 leading-[1.1] tracking-tight">
-                Quality Repair, <br /> Fair Pricing.
+                Whirlpool Repair <br /> Done Right.
               </h2>
             </div>
             
             <p className="text-slate-600 text-xl leading-relaxed font-medium">
-              We realized that people in Patna struggled to find professional repairs at the right time and fair price. We decided to change that once and for all.
+              We realized that finding expert technicians for specialized Whirlpool appliances in Patna was difficult. That's why we built a dedicated team to deliver premium, same-day doorstep fixing for your cooling and washing setups.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
               {[
-                "Certified Technicians",
-                "30-Day Warranty",
-                "Genuine Spare Parts",
-                "60-Min Emergency"
+                "Whirlpool Refrigerator Repair",
+                "Washing Machine Service",
+                "Expert AC Gas Filling",
+                "Genuine Whirlpool Spares",
+                "30-Day Service Warranty",
+                "60-Min Doorstep Response"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
                   <div className="bg-green-500 rounded-full p-1 text-white">
@@ -137,15 +134,15 @@ export default function About() {
         </div>
       </section>
 
-      {/* --- WHY CHOOSE US --- */}
+      {/* --- WHY CHOOSE US (TARGETED SERVICES) --- */}
       <section className="px-6 mb-24">
         <div className="max-w-7xl mx-auto bg-slate-950 rounded-[4rem] p-12 md:p-24 overflow-hidden relative border border-white/5 shadow-2xl">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
           
           <div className="relative z-10 text-center mb-20 space-y-4">
-            <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter italic">Why Choose Us?</h2>
+            <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter italic">What We Fix Better</h2>
             <div className="w-24 h-1 bg-sky-500 mx-auto rounded-full" />
-            <p className="text-slate-400 font-medium">Over 5000+ families in Patna trust our services</p>
+            <p className="text-slate-400 font-medium">Professional solutions for your primary home utilities in Patna</p>
           </div>
 
           <motion.div 
@@ -157,18 +154,18 @@ export default function About() {
           >
             <FeatureCard 
               icon={<ShieldCheck size={40}/>} 
-              title="Fully Insured" 
-              desc="Your appliances are our responsibility. We guarantee safe, secure, and professional handling every time." 
+              title="Advanced Refrigerators" 
+              desc="From single door troubleshooting to multi-door inverter Whirlpool fridge cooling issues, defrost errors, and gas leakage fixes." 
             />
             <FeatureCard 
               icon={<Clock size={40}/>} 
-              title="Punctual Service" 
-              desc="We value your time. Our expert technicians are committed to arriving at your doorstep exactly on schedule." 
+              title="Smart Washing Machines" 
+              desc="Expert repair for top-load, front-load, and semi-automatic Whirlpool washing machines covering drum issues, water drain, and digital errors." 
             />
             <FeatureCard 
               icon={<Users size={40}/>} 
-              title="Local Experts" 
-              desc="Being based in Patna, we truly understand the local climate and specific maintenance needs of your appliances." 
+              title="High-Cooling AC Service" 
+              desc="Complete split & window Air Conditioner services including deep power jet cleaning, absolute gas charging, and seasonal installation." 
             />
           </motion.div>
         </div>

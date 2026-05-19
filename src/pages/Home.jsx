@@ -72,14 +72,14 @@ export default function Home() {
                         </div>
 
                         <h2 className="text-5xl md:text-7xl font-black leading-[1.1] tracking-tight">
-                            Care Whirlpool <br />
+                            Whirlpool Service <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-sky-300">
-                                Service Center
+                                Center Patna
                             </span>
                         </h2>
 
                         <p className="text-lg md:text-xl text-blue-100/80 max-w-xl mx-auto md:mx-0 leading-relaxed font-medium">
-                            Expert Repair for All Your Home Appliances. Specialized in Cooling Systems with a guaranteed 60-minute arrival time.
+                            Expert Doorstep Repair for Whirlpool Refrigerators, Washing Machines, and ACs in Patna. Guaranteed 60-minute arrival with genuine spare parts.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-5 justify-center md:justify-start pt-4">
@@ -101,7 +101,6 @@ export default function Home() {
                             </motion.a>
                         </div>
                     </div>
-
                     <div ref={imageRef} className="md:w-1/2 mt-16 md:mt-0 relative flex justify-center items-center">
                         <div className="absolute inset-0 bg-blue-500 rounded-full opacity-20 blur-[100px] scale-125"></div>
                         <img
@@ -120,9 +119,9 @@ export default function Home() {
                         <h3 className="text-blue-600 font-black tracking-widest uppercase text-sm italic">Premium Solutions</h3>
                         <h2 className="text-4xl md:text-5xl font-black text-slate-900">Our Expertise</h2>
                         <div className="h-1.5 w-24 bg-blue-600 rounded-full"></div>
-                        
+
                         {/* Main Visiting Charge Highlight */}
-                        <motion.div 
+                        <motion.div
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             className="mt-6 flex items-center gap-3 bg-blue-50 border border-blue-100 px-6 py-3 rounded-2xl"

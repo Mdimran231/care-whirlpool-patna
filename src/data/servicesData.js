@@ -4,18 +4,20 @@
 import { image } from "framer-motion/client";
 
 export const servicesData = {
-  "fridge-repair": {
+ "fridge-repair": {
     title: "Fridge Repair",
     desc: "Samsung, LG, Whirlpool - All cooling issues fixed in 60 mins.",
-    image: "/freeze.png", // '/' lagana best practice hai public folder ke liye
-    price: "499",
+    image: "/freeze.png", 
+    warranty: "30 Days Warranty",
+    rating: "4.9/5 (Based on Local Reviews)",
     features: ["Compressor Troubleshooting", "Gas Charging", "PCB Repair", "Door Gasket Replacement"]
   },
   "washing-machine": {
     title: "Washing Machine",
     desc: "Expert drum & motor repair for all top/front load models.",
     image: "/washing.jpg",
-    price: "599",
+    warranty: "30 Days Warranty",
+    rating: "4.8/5 (Based on Local Reviews)",
     features: ["Drum Deep Cleaning", "Motor Vibration Fix", "Drain Pump Repair", "PCB/Timer Replacement"]
   },
   "ac-repair": {
@@ -23,6 +25,8 @@ export const servicesData = {
     desc: "Jet foam cleaning & gas filling for all AC types.",
     image: "/Gallery 1.jpeg",
     price: "299",
+    warranty: "30 Days Warranty",
+    rating: "4.7/5 (Based on Local Reviews)",
     features: ["Gas Leakage Check", "Compressor Repair", "Water Leakage Fix", "Filter Cleaning"]
   },
   "microwave-repair": {
@@ -30,6 +34,8 @@ export const servicesData = {
     desc: "Fast and reliable repair for all microwave ovens.",
     image: "/micro.jpg",
     price: "399",
+    warranty: "30 Days Warranty",
+    rating: "4.6/5 (Based on Local Reviews)",
     features: ["Magnetron Repair", "Capacitor Replacement", "Door Switch Fix", "Control Panel Repair"]
   },
   "installation": {
